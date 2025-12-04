@@ -1,0 +1,188 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Brand Colors - Purple dominant */
+  --blue-primary: #19a9dd;
+  --purple-primary: #643a90;
+
+  /* Semantic Tokens - Dark first */
+  --background: #0a0612;
+  --foreground: #f5f3f7;
+  --card: #130d1f;
+  --card-foreground: #f5f3f7;
+  --popover: #130d1f;
+  --popover-foreground: #f5f3f7;
+  --primary: #643a90;
+  --primary-foreground: #f5f3f7;
+  --secondary: #19a9dd;
+  --secondary-foreground: #0a0612;
+  --muted: #2d2340;
+  --muted-foreground: #9b94b1;
+  --accent: #8b5fbf;
+  --accent-foreground: #f5f3f7;
+  --destructive: #ff4757;
+  --destructive-foreground: #f5f3f7;
+  --border: #1f1830;
+  --input: #130d1f;
+  --ring: #643a90;
+  --chart-1: #643a90;
+  --chart-2: #19a9dd;
+  --chart-3: #8b5fbf;
+  --chart-4: #a89fc4;
+  --chart-5: #19a9dd;
+  --radius: 1rem;
+  --sidebar: #130d1f;
+  --sidebar-foreground: #f5f3f7;
+  --sidebar-primary: #643a90;
+  --sidebar-primary-foreground: #f5f3f7;
+  --sidebar-accent: #19a9dd;
+  --sidebar-accent-foreground: #0a0612;
+  --sidebar-border: #1f1830;
+  --sidebar-ring: #643a90;
+}
+
+.dark {
+  --background: #0a0612;
+  --foreground: #f5f3f7;
+  --card: #130d1f;
+  --card-foreground: #f5f3f7;
+  --popover: #130d1f;
+  --popover-foreground: #f5f3f7;
+  --primary: #643a90;
+  --primary-foreground: #f5f3f7;
+  --secondary: #19a9dd;
+  --secondary-foreground: #0a0612;
+  --muted: #2d2340;
+  --muted-foreground: #9b94b1;
+  --accent: #8b5fbf;
+  --accent-foreground: #f5f3f7;
+  --destructive: #ff4757;
+  --destructive-foreground: #f5f3f7;
+  --border: #1f1830;
+  --input: #130d1f;
+  --ring: #643a90;
+  --chart-1: #643a90;
+  --chart-2: #19a9dd;
+  --chart-3: #8b5fbf;
+  --chart-4: #a89fc4;
+  --chart-5: #19a9dd;
+  --sidebar: #130d1f;
+  --sidebar-foreground: #f5f3f7;
+  --sidebar-primary: #643a90;
+  --sidebar-primary-foreground: #f5f3f7;
+  --sidebar-accent: #19a9dd;
+  --sidebar-accent-foreground: #0a0612;
+  --sidebar-border: #1f1830;
+  --sidebar-ring: #643a90;
+}
+
+@theme inline {
+  --font-sans: "Inter", "Inter Fallback";
+  --font-mono: "Inter", "Inter Fallback";
+  --font-heading: "Poppins", "Poppins Fallback";
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Updated gradients for glossy effect with more saturated purples */
+.gradient-brand {
+  background: linear-gradient(135deg, #7c3aad 0%, #9d5fd1 50%, #19a9dd 100%);
+}
+
+.gradient-brand-text {
+  background: linear-gradient(135deg, #7c3aad 0%, #9d5fd1 50%, #19a9dd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glassmorphism effects */
+.glass {
+  background: rgba(19, 13, 31, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 243, 247, 0.1);
+}
+
+.glass-sm {
+  background: rgba(19, 13, 31, 0.3);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 243, 247, 0.08);
+}
+
+.glass-lg {
+  background: rgba(19, 13, 31, 0.5);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 243, 247, 0.12);
+}
+
+/* Glow effects for premium feel */
+.glow-sm {
+  box-shadow: 0 0 20px rgba(100, 58, 144, 0.15);
+}
+
+.glow-md {
+  box-shadow: 0 0 40px rgba(100, 58, 144, 0.25);
+}
+
+.glow-lg {
+  box-shadow: 0 0 60px rgba(100, 58, 144, 0.35);
+}
+
+/* Text gradients */
+.text-gradient {
+  background: linear-gradient(135deg, #7c3aad 0%, #9d5fd1 50%, #19a9dd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Subtle accent gradient for sleek effects */
+.gradient-accent {
+  background: linear-gradient(135deg, #8b5fbf 0%, #643a90 100%);
+}
