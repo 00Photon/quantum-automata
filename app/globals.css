@@ -4,85 +4,85 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Brand Colors - Purple dominant */
-  --blue-primary: #19a9dd;
-  --purple-primary: #643a90;
+  /* Brand Colors - Indigo to Violet */
+  --blue-primary: #1f2c5a;
+  --purple-primary: #a24bff;
 
-  /* Semantic Tokens - Dark first */
-  --background: #0a0612;
-  --foreground: #f5f3f7;
-  --card: #130d1f;
-  --card-foreground: #f5f3f7;
-  --popover: #130d1f;
-  --popover-foreground: #f5f3f7;
-  --primary: #643a90;
-  --primary-foreground: #f5f3f7;
-  --secondary: #19a9dd;
-  --secondary-foreground: #0a0612;
-  --muted: #2d2340;
-  --muted-foreground: #9b94b1;
-  --accent: #8b5fbf;
-  --accent-foreground: #f5f3f7;
+  /* Semantic Tokens */
+  --background: #000000;
+  --foreground: #f5f5f7;
+  --card: #050505;
+  --card-foreground: #f5f5f7;
+  --popover: #050505;
+  --popover-foreground: #f5f5f7;
+  --primary: #a24bff;
+  --primary-foreground: #08080c;
+  --secondary: #1f2c5a;
+  --secondary-foreground: #f5f5f7;
+  --muted: #0c0c12;
+  --muted-foreground: #a1a1b5;
+  --accent: #6c4dff;
+  --accent-foreground: #f5f5f7;
   --destructive: #ff4757;
-  --destructive-foreground: #f5f3f7;
-  --border: #1f1830;
-  --input: #130d1f;
-  --ring: #643a90;
-  --chart-1: #643a90;
-  --chart-2: #19a9dd;
-  --chart-3: #8b5fbf;
-  --chart-4: #a89fc4;
-  --chart-5: #19a9dd;
+  --destructive-foreground: #f5f5f7;
+  --border: #1a1a1f;
+  --input: #0a0a10;
+  --ring: #a24bff;
+  --chart-1: #a24bff;
+  --chart-2: #6c4dff;
+  --chart-3: #4b3bd8;
+  --chart-4: #1f2c5a;
+  --chart-5: #8f78ff;
   --radius: 1rem;
-  --sidebar: #130d1f;
-  --sidebar-foreground: #f5f3f7;
-  --sidebar-primary: #643a90;
-  --sidebar-primary-foreground: #f5f3f7;
-  --sidebar-accent: #19a9dd;
-  --sidebar-accent-foreground: #0a0612;
-  --sidebar-border: #1f1830;
-  --sidebar-ring: #643a90;
+  --sidebar: #020202;
+  --sidebar-foreground: #f5f5f7;
+  --sidebar-primary: #a24bff;
+  --sidebar-primary-foreground: #08080c;
+  --sidebar-accent: #1f2c5a;
+  --sidebar-accent-foreground: #f5f5f7;
+  --sidebar-border: #1a1a1f;
+  --sidebar-ring: #a24bff;
 }
 
 .dark {
-  --background: #0a0612;
-  --foreground: #f5f3f7;
-  --card: #130d1f;
-  --card-foreground: #f5f3f7;
-  --popover: #130d1f;
-  --popover-foreground: #f5f3f7;
-  --primary: #643a90;
-  --primary-foreground: #f5f3f7;
-  --secondary: #19a9dd;
-  --secondary-foreground: #0a0612;
-  --muted: #2d2340;
-  --muted-foreground: #9b94b1;
-  --accent: #8b5fbf;
-  --accent-foreground: #f5f3f7;
+  --background: #000000;
+  --foreground: #f5f5f7;
+  --card: #050505;
+  --card-foreground: #f5f5f7;
+  --popover: #050505;
+  --popover-foreground: #f5f5f7;
+  --primary: #a24bff;
+  --primary-foreground: #08080c;
+  --secondary: #1f2c5a;
+  --secondary-foreground: #f5f5f7;
+  --muted: #0c0c12;
+  --muted-foreground: #a1a1b5;
+  --accent: #6c4dff;
+  --accent-foreground: #f5f5f7;
   --destructive: #ff4757;
-  --destructive-foreground: #f5f3f7;
-  --border: #1f1830;
-  --input: #130d1f;
-  --ring: #643a90;
-  --chart-1: #643a90;
-  --chart-2: #19a9dd;
-  --chart-3: #8b5fbf;
-  --chart-4: #a89fc4;
-  --chart-5: #19a9dd;
-  --sidebar: #130d1f;
-  --sidebar-foreground: #f5f3f7;
-  --sidebar-primary: #643a90;
-  --sidebar-primary-foreground: #f5f3f7;
-  --sidebar-accent: #19a9dd;
-  --sidebar-accent-foreground: #0a0612;
-  --sidebar-border: #1f1830;
-  --sidebar-ring: #643a90;
+  --destructive-foreground: #f5f5f7;
+  --border: #1a1a1f;
+  --input: #0a0a10;
+  --ring: #a24bff;
+  --chart-1: #a24bff;
+  --chart-2: #6c4dff;
+  --chart-3: #4b3bd8;
+  --chart-4: #1f2c5a;
+  --chart-5: #8f78ff;
+  --sidebar: #020202;
+  --sidebar-foreground: #f5f5f7;
+  --sidebar-primary: #a24bff;
+  --sidebar-primary-foreground: #08080c;
+  --sidebar-accent: #1f2c5a;
+  --sidebar-accent-foreground: #f5f5f7;
+  --sidebar-border: #1a1a1f;
+  --sidebar-ring: #a24bff;
 }
 
 @theme inline {
-  --font-sans: "Inter", "Inter Fallback";
-  --font-mono: "Inter", "Inter Fallback";
-  --font-heading: "Poppins", "Poppins Fallback";
+  --font-sans: "Schibsted Grotesk", "Schibsted Grotesk Fallback", sans-serif;
+  --font-mono: "Schibsted Grotesk", "Schibsted Grotesk Fallback", sans-serif;
+  --font-heading: "Schibsted Grotesk", "Schibsted Grotesk Fallback", sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -130,13 +130,13 @@
   }
 }
 
-/* Updated gradients for glossy effect with more saturated purples */
+/* Updated gradients with logo palette */
 .gradient-brand {
-  background: linear-gradient(135deg, #7c3aad 0%, #9d5fd1 50%, #19a9dd 100%);
+  background: linear-gradient(135deg, #1f2c5a 0%, #4c3edb 45%, #a24bff 100%);
 }
 
 .gradient-brand-text {
-  background: linear-gradient(135deg, #7c3aad 0%, #9d5fd1 50%, #19a9dd 100%);
+  background: linear-gradient(135deg, #1f2c5a 0%, #5d45ff 50%, #c18eff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -144,21 +144,21 @@
 
 /* Glassmorphism effects */
 .glass {
-  background: rgba(19, 13, 31, 0.4);
+  background: rgba(16, 16, 32, 0.45);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 243, 247, 0.1);
+  border: 1px solid rgba(162, 75, 255, 0.15);
 }
 
 .glass-sm {
-  background: rgba(19, 13, 31, 0.3);
+  background: rgba(16, 16, 32, 0.35);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 243, 247, 0.08);
+  border: 1px solid rgba(162, 75, 255, 0.1);
 }
 
 .glass-lg {
-  background: rgba(19, 13, 31, 0.5);
+  background: rgba(16, 16, 32, 0.55);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 243, 247, 0.12);
+  border: 1px solid rgba(162, 75, 255, 0.16);
 }
 
 /* Glow effects for premium feel */
@@ -176,7 +176,7 @@
 
 /* Text gradients */
 .text-gradient {
-  background: linear-gradient(135deg, #7c3aad 0%, #9d5fd1 50%, #19a9dd 100%);
+  background: linear-gradient(135deg, #1f2c5a 0%, #5b3ff0 45%, #c18eff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -184,5 +184,5 @@
 
 /* Subtle accent gradient for sleek effects */
 .gradient-accent {
-  background: linear-gradient(135deg, #8b5fbf 0%, #643a90 100%);
+  background: linear-gradient(135deg, #1f2c5a 0%, #5d45ff 60%, #a24bff 100%);
 }

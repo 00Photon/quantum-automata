@@ -35,15 +35,7 @@ const stats: StatItem[] = [
 
 export function StatsSection() {
   return (
-    <section className="py-20 md:py-28 relative overflow-hidden">
-      {/* Background gradient orbs */}
-      <div className="absolute inset-0 pointer-events-none">
-        <motion.div
-          animate={{ x: [0, 50, 0] }}
-          transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY }}
-          className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-purple-900/10 to-transparent rounded-full blur-3xl"
-        />
-      </div>
+    <section className="py-20 md:py-28 relative overflow-hidden bg-black">
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">

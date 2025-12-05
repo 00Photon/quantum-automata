@@ -16,7 +16,7 @@ const gradientLayers: GradientLayer[] = [
     size: 520,
     style: {
       background:
-        "radial-gradient(circle at 30% 30%, rgba(124, 58, 173, 0.5), rgba(25, 169, 221, 0.05) 55%, transparent 70%)",
+        "radial-gradient(circle at 30% 30%, rgba(162, 75, 255, 0.35), rgba(32, 26, 56, 0.08) 60%, transparent 80%)",
     },
     duration: 36,
   },
@@ -24,7 +24,7 @@ const gradientLayers: GradientLayer[] = [
     size: 420,
     style: {
       background:
-        "radial-gradient(circle at 70% 20%, rgba(25, 169, 221, 0.45), rgba(100, 58, 144, 0.05) 60%, transparent 80%)",
+        "radial-gradient(circle at 70% 20%, rgba(76, 62, 219, 0.4), rgba(26, 23, 63, 0.1) 60%, transparent 85%)",
     },
     duration: 28,
     delay: 4,
@@ -33,7 +33,7 @@ const gradientLayers: GradientLayer[] = [
     size: 360,
     style: {
       background:
-        "radial-gradient(circle at 50% 50%, rgba(155, 95, 209, 0.5), rgba(25, 169, 221, 0.08) 50%, transparent 75%)",
+        "radial-gradient(circle at 50% 50%, rgba(31, 44, 90, 0.45), rgba(20, 20, 40, 0.08) 55%, transparent 80%)",
     },
     duration: 32,
     delay: 2,
@@ -87,7 +87,7 @@ export function GradientParticles() {
         {sparkleConfig.map((sparkle, index) => (
           <motion.span
             key={`sparkle-${index}`}
-            className="absolute rounded-full bg-gradient-to-br from-white/70 via-purple-200/50 to-transparent opacity-0 blur-[2px]"
+            className="absolute rounded-full bg-gradient-to-br from-white/70 via-purple-200/40 to-transparent opacity-0 blur-[2px]"
             style={{
               width: sparkle.size,
               height: sparkle.size,

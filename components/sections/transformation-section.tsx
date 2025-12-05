@@ -13,14 +13,7 @@ export function TransformationSection() {
   ]
 
   return (
-    <section className="py-20 md:py-28 relative overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none">
-        <motion.div
-          animate={{ y: [0, -30, 0] }}
-          transition={{ duration: 15, repeat: Number.POSITIVE_INFINITY }}
-          className="absolute top-1/2 right-0 w-96 h-96 bg-gradient-to-br from-blue-900/10 to-transparent rounded-full blur-3xl"
-        />
-      </div>
+    <section className="py-20 md:py-28 relative overflow-hidden bg-black">
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">

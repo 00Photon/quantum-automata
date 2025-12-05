@@ -113,7 +113,7 @@ function ContactModal({ isOpen, onClose }) {
             label: "Chat with us",
             description: "Start a live chat",
             href: "#chat",
-            color: "from-blue-500 to-blue-600"
+            color: "from-[#1f2c5a] to-[#4c3edb]"
         },
         {
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
@@ -126,7 +126,7 @@ function ContactModal({ isOpen, onClose }) {
             label: "Send us a mail",
             description: "yomirichard@gmail.com",
             href: "mailto:yomirichard@gmail.com",
-            color: "from-purple-500 to-purple-600"
+            color: "from-[#4c3edb] to-[#a24bff]"
         },
         {
             icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
@@ -139,7 +139,7 @@ function ContactModal({ isOpen, onClose }) {
             label: "WhatsApp",
             description: "+234 705 539 4888",
             href: "https://wa.me/2347055394888",
-            color: "from-green-500 to-green-600"
+            color: "from-[#1f2c5a] to-[#a24bff]"
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -372,7 +372,7 @@ function Navbar() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-                className: "fixed top-0 w-full bg-background/30 backdrop-blur-2xl z-50",
+                className: "fixed top-0 w-full bg-black/70 backdrop-blur-xl border-b border-white/5 z-50",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
                     children: [
@@ -404,7 +404,7 @@ function Navbar() {
                                     children: [
                                         navItems.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                 href: item.href,
-                                                className: "text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-300",
+                                                className: "text-xs tracking-[0.3em] uppercase text-muted-foreground hover:text-primary transition-colors duration-300",
                                                 children: item.label
                                             }, item.href, false, {
                                                 fileName: "[project]/components/navbar.tsx",
@@ -413,7 +413,7 @@ function Navbar() {
                                             }, this)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                                             onClick: ()=>setIsModalOpen(true),
-                                            className: "bg-gradient-brand hover:shadow-lg text-white border-0 transition-all duration-300",
+                                            className: "bg-primary text-primary-foreground border-0 transition-all duration-300 rounded-full px-6 tracking-wide uppercase",
                                             children: "Get Started"
                                         }, void 0, false, {
                                             fileName: "[project]/components/navbar.tsx",
@@ -460,7 +460,7 @@ function Navbar() {
                                 children: [
                                     navItems.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                             href: item.href,
-                                            className: "text-sm font-medium text-muted-foreground hover:text-primary transition-colors px-2",
+                                            className: "text-xs tracking-[0.3em] uppercase text-muted-foreground hover:text-primary transition-colors px-2",
                                             onClick: ()=>setIsOpen(false),
                                             children: item.label
                                         }, item.href, false, {
@@ -473,7 +473,7 @@ function Navbar() {
                                             setIsModalOpen(true);
                                             setIsOpen(false);
                                         },
-                                        className: "bg-gradient-brand text-white w-full",
+                                        className: "bg-primary text-primary-foreground w-full uppercase tracking-wide",
                                         children: "Get Started"
                                     }, void 0, false, {
                                         fileName: "[project]/components/navbar.tsx",

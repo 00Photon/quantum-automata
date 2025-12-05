@@ -21,7 +21,7 @@ export function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 w-full bg-background/30 backdrop-blur-2xl z-50">
+      <nav className="fixed top-0 w-full bg-black/70 backdrop-blur-xl border-b border-white/5 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
@@ -42,14 +42,14 @@ export function Navbar() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-300"
+                  className="text-xs tracking-[0.3em] uppercase text-muted-foreground hover:text-primary transition-colors duration-300"
                 >
                   {item.label}
                 </Link>
               ))}
               <Button
                 onClick={() => setIsModalOpen(true)}
-                className="bg-gradient-brand hover:shadow-lg text-white border-0 transition-all duration-300"
+                className="bg-primary text-primary-foreground border-0 transition-all duration-300 rounded-full px-6 tracking-wide uppercase"
               >
                 Get Started
               </Button>
@@ -69,7 +69,7 @@ export function Navbar() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors px-2"
+                    className="text-xs tracking-[0.3em] uppercase text-muted-foreground hover:text-primary transition-colors px-2"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.label}
@@ -80,7 +80,7 @@ export function Navbar() {
                     setIsModalOpen(true)
                     setIsOpen(false)
                   }}
-                  className="bg-gradient-brand text-white w-full"
+                  className="bg-primary text-primary-foreground w-full uppercase tracking-wide"
                 >
                   Get Started
                 </Button>

@@ -7,19 +7,7 @@ import { ArrowRight, Zap } from "lucide-react"
 
 export function CtaSection() {
   return (
-    <section className="py-20 md:py-28 relative overflow-hidden">
-      {/* Animated background */}
-      <div className="absolute inset-0">
-        <motion.div
-          animate={{
-            scale: [1, 1.1, 1],
-            opacity: [0.3, 0.5, 0.3],
-          }}
-          transition={{ duration: 12, repeat: Number.POSITIVE_INFINITY }}
-          className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-transparent to-blue-900/20 rounded-full blur-3xl"
-        />
-      </div>
-
+    <section className="py-20 md:py-28 relative overflow-hidden bg-black">
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -40,7 +28,7 @@ export function CtaSection() {
             Ready to Transform Your Business?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-light">
-            Let's discuss how Quantum Automata can help you achieve your goals with cutting-edge AI and automation
+            Let&apos;s discuss how Quantum Automata can help you achieve your goals with cutting-edge AI and automation
             solutions.
           </p>
           <div className="pt-4">

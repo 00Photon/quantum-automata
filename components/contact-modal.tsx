@@ -15,21 +15,21 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
       label: "Chat with us",
       description: "Start a live chat",
       href: "#chat",
-      color: "from-blue-500 to-blue-600",
+      color: "from-[#1f2c5a] to-[#4c3edb]",
     },
     {
       icon: <Mail className="w-6 h-6" />,
       label: "Send us a mail",
       description: "yomirichard@gmail.com",
       href: "mailto:yomirichard@gmail.com",
-      color: "from-purple-500 to-purple-600",
+      color: "from-[#4c3edb] to-[#a24bff]",
     },
     {
       icon: <Phone className="w-6 h-6" />,
       label: "WhatsApp",
       description: "+234 705 539 4888",
       href: "https://wa.me/2347055394888",
-      color: "from-green-500 to-green-600",
+      color: "from-[#1f2c5a] to-[#a24bff]",
     },
   ]
 
