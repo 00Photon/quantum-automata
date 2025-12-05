@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ContactModal } from "./contact-modal"
+import { ThemeToggle } from "./theme-toggle"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,7 +22,7 @@ export function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 w-full bg-black/70 backdrop-blur-xl border-b border-white/5 z-50">
+      <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-xl border-b border-border/60 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
@@ -37,7 +38,7 @@ export function Navbar() {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center gap-8">
+            <div className="hidden md:flex items-center gap-6">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
@@ -47,6 +48,7 @@ export function Navbar() {
                   {item.label}
                 </Link>
               ))}
+              <ThemeToggle />
               <Button
                 onClick={() => setIsModalOpen(true)}
                 className="bg-primary text-primary-foreground border-0 transition-all duration-300 rounded-full px-6 tracking-wide uppercase"
@@ -75,6 +77,10 @@ export function Navbar() {
                     {item.label}
                   </Link>
                 ))}
+                <div className="flex items-center justify-between px-2">
+                  <span className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Theme</span>
+                  <ThemeToggle />
+                </div>
                 <Button
                   onClick={() => {
                     setIsModalOpen(true)

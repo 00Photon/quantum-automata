@@ -6,7 +6,7 @@ import { ShieldCheck, Scale, FileText, Lock, Mail, CheckCircle2 } from "lucide-r
 const termSections = [
   {
     title: "1. Acceptance of Terms",
-    body: "By accessing or using Quantum Automata Limited products, platforms, or services, you acknowledge that you have read, understood, and agree to be bound by these Terms & Conditions. If you are using our services on behalf of an organization, you represent that you have the authority to bind that organization to these terms.",
+    body: "By accessing or using Quantum Automataproducts, platforms, or services, you acknowledge that you have read, understood, and agree to be bound by these Terms & Conditions. If you are using our services on behalf of an organization, you represent that you have the authority to bind that organization to these terms.",
   },
   {
     title: "2. Services & Licensing",
@@ -26,7 +26,7 @@ const termSections = [
   },
   {
     title: "6. Liability",
-    body: "To the maximum extent permitted by law, Quantum Automata Limited is not liable for indirect, incidental, or consequential damages. Our total cumulative liability arising from any contract will not exceed the fees paid during the twelve (12) months preceding the event giving rise to the claim.",
+    body: "To the maximum extent permitted by law, Quantum Automatais not liable for indirect, incidental, or consequential damages. Our total cumulative liability arising from any contract will not exceed the fees paid during the twelve (12) months preceding the event giving rise to the claim.",
   },
 ]
 
@@ -72,7 +72,7 @@ export function LegalPageContent() {
               Legal Notice, Terms & Conditions
             </h1>
             <p className="text-lg text-muted-foreground mt-4 leading-relaxed">
-              This page outlines how Quantum Automata Limited collaborates with clients, handles data securely, and
+              This page outlines how Quantum Automatacollaborates with clients, handles data securely, and
               ensures that every automation product is built on ethical and regulatory foundations.
             </p>
           </motion.div>
@@ -142,11 +142,11 @@ export function LegalPageContent() {
           <div className="flex flex-col gap-4 text-sm">
             <div className="flex items-center gap-3">
               <Mail className="w-5 h-5 text-secondary" />
-              <span>legal@quantumautomata.com</span>
+              <span>support@quantumautomata.ng</span>
             </div>
             <div className="flex items-center gap-3">
               <CheckCircle2 className="w-5 h-5 text-secondary" />
-              <span>Quantum Automata Limited • RC 7290432 • Lagos, Nigeria</span>
+              <span>Quantum Automata• RC 8774835 • Abuja, Nigeria</span>
             </div>
           </div>
           <p className="text-xs text-muted-foreground">

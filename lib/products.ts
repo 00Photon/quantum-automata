@@ -16,10 +16,10 @@ export interface Product {
 export const products: Product[] = [
   {
     id: "eas",
-    name: "Executive Assistant System",
-    slug: "eas",
+    name: "Intellinx by QA",
+    slug: "interl",
     description:
-      "Intelligent executive assistant powered by advanced AI to streamline your workflow and enhance productivity.",
+      "Intellinx by QA is powered by advanced AI to streamline your workflow and enhance productivity.",
     shortDescription: "AI-powered executive assistant for productivity",
     icon: "Zap",
     features: [

@@ -8,7 +8,7 @@ import { CtaSection } from "@/components/sections/cta-section"
 
 export default function Home() {
   return (
-    <div className="relative pt-16 overflow-hidden bg-black">
+    <div className="relative pt-16 overflow-hidden bg-background">
       <HeroSection />
       <AnimatedSection delay={0.05} intensity="bold">
         <StatsSection />

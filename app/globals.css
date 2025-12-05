@@ -4,44 +4,42 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Brand Colors - Indigo to Violet */
-  --blue-primary: #1f2c5a;
-  --purple-primary: #a24bff;
-
-  /* Semantic Tokens */
-  --background: #000000;
-  --foreground: #f5f5f7;
-  --card: #050505;
-  --card-foreground: #f5f5f7;
-  --popover: #050505;
-  --popover-foreground: #f5f5f7;
-  --primary: #a24bff;
-  --primary-foreground: #08080c;
-  --secondary: #1f2c5a;
-  --secondary-foreground: #f5f5f7;
-  --muted: #0c0c12;
-  --muted-foreground: #a1a1b5;
-  --accent: #6c4dff;
-  --accent-foreground: #f5f5f7;
-  --destructive: #ff4757;
-  --destructive-foreground: #f5f5f7;
-  --border: #1a1a1f;
-  --input: #0a0a10;
-  --ring: #a24bff;
-  --chart-1: #a24bff;
-  --chart-2: #6c4dff;
-  --chart-3: #4b3bd8;
-  --chart-4: #1f2c5a;
-  --chart-5: #8f78ff;
+  --background: #f7f8fc;
+  --foreground: #111322;
+  --card: #ffffff;
+  --card-foreground: #111322;
+  --popover: #ffffff;
+  --popover-foreground: #111322;
+  --primary: #4a3bd7;
+  --primary-foreground: #fcfaff;
+  --secondary: #e7e9fb;
+  --secondary-foreground: #1f2b54;
+  --muted: #eef0f8;
+  --muted-foreground: #505677;
+  --accent: #a355ff;
+  --accent-foreground: #fcfaff;
+  --destructive: #f04455;
+  --destructive-foreground: #ffffff;
+  --border: #dde0f0;
+  --input: #e8eaf5;
+  --ring: #4a3bd7;
+  --chart-1: #4a3bd7;
+  --chart-2: #a355ff;
+  --chart-3: #1f2b54;
+  --chart-4: #ffb3f5;
+  --chart-5: #6b4eff;
   --radius: 1rem;
-  --sidebar: #020202;
-  --sidebar-foreground: #f5f5f7;
-  --sidebar-primary: #a24bff;
-  --sidebar-primary-foreground: #08080c;
-  --sidebar-accent: #1f2c5a;
-  --sidebar-accent-foreground: #f5f5f7;
-  --sidebar-border: #1a1a1f;
-  --sidebar-ring: #a24bff;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #111322;
+  --sidebar-primary: #4a3bd7;
+  --sidebar-primary-foreground: #fcfaff;
+  --sidebar-accent: #e7e9fb;
+  --sidebar-accent-foreground: #1f2b54;
+  --sidebar-border: #dde0f0;
+  --sidebar-ring: #4a3bd7;
+  --glass-bg: rgba(255, 255, 255, 0.72);
+  --glass-border: rgba(74, 59, 215, 0.12);
+  --glass-shadow: 0 25px 45px rgba(17, 19, 34, 0.08);
 }
 
 .dark {
@@ -77,6 +75,9 @@
   --sidebar-accent-foreground: #f5f5f7;
   --sidebar-border: #1a1a1f;
   --sidebar-ring: #a24bff;
+  --glass-bg: rgba(16, 16, 32, 0.55);
+  --glass-border: rgba(162, 75, 255, 0.16);
+  --glass-shadow: 0 25px 45px rgba(6, 8, 20, 0.5);
 }
 
 @theme inline {
@@ -144,21 +145,23 @@
 
 /* Glassmorphism effects */
 .glass {
-  background: rgba(16, 16, 32, 0.45);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(162, 75, 255, 0.15);
+  background: var(--glass-bg);
+  backdrop-filter: blur(18px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
 }
 
 .glass-sm {
-  background: rgba(16, 16, 32, 0.35);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(162, 75, 255, 0.1);
+  background: color-mix(in srgb, var(--glass-bg) 85%, transparent);
+  backdrop-filter: blur(14px);
+  border: 1px solid color-mix(in srgb, var(--glass-border) 80%, transparent);
 }
 
 .glass-lg {
-  background: rgba(16, 16, 32, 0.55);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(162, 75, 255, 0.16);
+  background: color-mix(in srgb, var(--glass-bg) 95%, transparent);
+  backdrop-filter: blur(22px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
 }
 
 /* Glow effects for premium feel */

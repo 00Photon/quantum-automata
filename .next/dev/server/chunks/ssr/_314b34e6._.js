@@ -20,27 +20,25 @@ function AnimatedSection({ children, delay = 0.1, className, intensity = "defaul
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
             initial: {
                 opacity: 0,
-                y: 80,
-                scale: 0.98,
-                filter: "blur(8px)"
+                y: 30,
+                scale: 0.99
             },
             whileInView: {
                 opacity: 1,
                 y: 0,
-                scale: 1,
-                filter: "blur(0px)"
+                scale: 1
             },
             viewport: {
                 once: true,
-                amount: 0.3
+                amount: 0.12
             },
             transition: {
-                duration: 1,
+                duration: 0.5,
                 delay,
                 ease: [
-                    0.16,
+                    0.33,
                     1,
-                    0.3,
+                    0.68,
                     1
                 ]
             },
@@ -84,7 +82,7 @@ function HeroSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-20 bg-black",
+                className: "relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-20 bg-background",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "relative z-10 max-w-5xl mx-auto px-4 text-center space-y-8",
                     children: [
@@ -102,7 +100,7 @@ function HeroSection() {
                             },
                             className: "flex justify-center",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "px-4 py-2 rounded-full border border-white/10 text-xs tracking-[0.3em] uppercase text-white/60",
+                                className: "px-4 py-2 rounded-full border border-border/60 text-xs tracking-[0.3em] uppercase text-muted-foreground",
                                 children: "The Future of Automation is Here"
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/hero-section.tsx",
@@ -127,10 +125,10 @@ function HeroSection() {
                                 duration: 0.8,
                                 delay: 0.1
                             },
-                            className: "text-4xl md:text-6xl lg:text-[4.5rem] font-black leading-[1.1] tracking-tight text-white",
+                            className: "text-4xl md:text-6xl lg:text-[4.5rem] font-black leading-[1.1] tracking-tight text-foreground",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "block text-white mb-2",
+                                    className: "block text-gradient mb-2",
                                     children: "Automating"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/hero-section.tsx",
@@ -138,7 +136,7 @@ function HeroSection() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "block text-white mb-2",
+                                    className: "block text-gradient mb-2",
                                     children: "the Future"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/hero-section.tsx",
@@ -146,8 +144,8 @@ function HeroSection() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "block text-white/80",
-                                    children: "of Businesses with AI"
+                                    className: "block text-muted-foreground",
+                                    children: "of Businesses"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/hero-section.tsx",
                                     lineNumber: 36,
@@ -172,8 +170,8 @@ function HeroSection() {
                                 duration: 0.8,
                                 delay: 0.2
                             },
-                            className: "text-lg md:text-xl text-white/70 max-w-3xl mx-auto",
-                            children: "Quantum Automata Limited develops software systems designed to enhance operational efficiency, decision-making, and digital capability for individuals and businesses within the financial and commercial sectors."
+                            className: "text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto",
+                            children: "Quantum Automata develops software systems designed to enhance operational efficiency, decision-making, and digital capability for individuals and businesses within the financial and commercial sectors."
                         }, void 0, false, {
                             fileName: "[project]/components/sections/hero-section.tsx",
                             lineNumber: 39,
@@ -196,7 +194,7 @@ function HeroSection() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                     size: "lg",
-                                    className: "bg-white text-black hover:scale-105 transition-transform",
+                                    className: "bg-primary text-primary-foreground hover:scale-105 transition-transform",
                                     onClick: ()=>setIsModalOpen(true),
                                     children: [
                                         "Get Started ",
@@ -217,7 +215,7 @@ function HeroSection() {
                                     asChild: true,
                                     size: "lg",
                                     variant: "outline",
-                                    className: "border-white/30 text-white hover:bg-white/10",
+                                    className: "border-border text-foreground hover:bg-muted/30",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         href: "/products",
                                         children: "Explore Products"
@@ -250,8 +248,8 @@ function HeroSection() {
                                 duration: 0.8,
                                 delay: 0.35
                             },
-                            className: "text-sm text-white/60",
-                            children: "Africa-Focused • Ethical AI • Enterprise Solutions"
+                            className: "text-sm text-muted-foreground",
+                            children: "Global-Focused • Ethical AI • Enterprise Solutions"
                         }, void 0, false, {
                             fileName: "[project]/components/sections/hero-section.tsx",
                             lineNumber: 68,
@@ -339,13 +337,13 @@ const stats = [
             lineNumber: 30,
             columnNumber: 11
         }, ("TURBOPACK compile-time value", void 0)),
-        value: "Africa",
+        value: "Global",
         label: "Focused"
     }
 ];
 function StatsSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "py-20 md:py-28 relative overflow-hidden bg-black",
+        className: "py-20 md:py-28 relative overflow-hidden bg-background",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -521,7 +519,7 @@ function ExpertiseSection() {
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "py-20 md:py-28 relative overflow-hidden bg-black",
+        className: "py-20 md:py-28 relative overflow-hidden bg-background",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
             children: [
@@ -678,9 +676,9 @@ __turbopack_context__.s([
 const products = [
     {
         id: "eas",
-        name: "Executive Assistant System",
-        slug: "eas",
-        description: "Intelligent executive assistant powered by advanced AI to streamline your workflow and enhance productivity.",
+        name: "Intellinx by QA",
+        slug: "interl",
+        description: "Intellinx by QA is powered by advanced AI to streamline your workflow and enhance productivity.",
         shortDescription: "AI-powered executive assistant for productivity",
         icon: "Zap",
         features: [
@@ -783,7 +781,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 function ProductsOverviewSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "py-20 md:py-28 relative overflow-hidden bg-black",
+        className: "py-20 md:py-28 relative overflow-hidden bg-background",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
             children: [
@@ -1006,7 +1004,7 @@ function TransformationSection() {
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "py-20 md:py-28 relative overflow-hidden bg-black",
+        className: "py-20 md:py-28 relative overflow-hidden bg-background",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1239,7 +1237,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 function CtaSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "py-20 md:py-28 relative overflow-hidden bg-black",
+        className: "py-20 md:py-28 relative overflow-hidden bg-background",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {

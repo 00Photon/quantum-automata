@@ -23,10 +23,10 @@ export function AnimatedSection({
   return (
     <div className={cn("relative isolate", className)}>
       <motion.div
-        initial={{ opacity: 0, y: 80, scale: 0.98, filter: "blur(8px)" }}
-        whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
-        viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 1, delay, ease: [0.16, 1, 0.3, 1] }}
+        initial={{ opacity: 0, y: 30, scale: 0.99 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        viewport={{ once: true, amount: 0.12 }}
+        transition={{ duration: 0.5, delay, ease: [0.33, 1, 0.68, 1] }}
       >
         {children}
       </motion.div>

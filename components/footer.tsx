@@ -54,19 +54,19 @@ export function Footer() {
             <div className="space-y-3 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <Mail size={16} />
-                <a href="mailto:yomirichard@gmail.com" className="hover:text-primary transition">
-                  yomirichard@gmail.com
+                <a href="mailto:support@quantumautomata.ng" className="hover:text-primary transition">
+                 support@quantumautomata.ng
                 </a>
               </div>
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <Phone size={16} />
                 <a href="tel:+234705539488" className="hover:text-primary transition">
                   +234 705 539 4888
                 </a>
-              </div>
+              </div> */}
               <div className="flex items-start gap-2">
                 <MapPin size={16} className="mt-0.5 flex-shrink-0" />
-                <span>No 12, Emmanuel Close, Life Camp, Abuja</span>
+                <span>Abuja, Nigeria. </span>
               </div>
             </div>
           </div>

@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import { ThemeProvider } from "@/components/theme-provider"
 
 const schibstedGrotesk = Schibsted_Grotesk({
   subsets: ["latin"],
@@ -14,13 +15,13 @@ const schibstedGrotesk = Schibsted_Grotesk({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://quantumautomata.com"),
-  title: "Quantum Automata Limited | AI & Automation Solutions",
+  title: "Quantum Automata| AI & Automation Solutions",
   description:
-    "Automating the future of businesses with ethical AI and automation solutions for Africa's financial and commercial sectors.",
+    "Automating the future of businesses with ethical AI and automation solutions for Global's financial and commercial sectors.",
   openGraph: {
     title: "Quantum Automata Limited",
     description:
-      "Ethical AI and automation products that help African businesses streamline operations, scale securely, and stay compliant.",
+      "Ethical AI and automation products that help Global businesses streamline operations, scale securely, and stay compliant.",
     url: "https://quantumautomata.com",
     siteName: "Quantum Automata Limited",
     locale: "en_US",
@@ -36,9 +37,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Quantum Automata Limited | Ethical AI & Automation",
+    title: "Quantum Automata| Ethical AI & Automation",
     description:
-      "Building sleek, compliant AI platforms that automate mission-critical work for Africa's financial and commercial teams.",
+      "Building sleek, compliant AI platforms that automate mission-critical work for Global's financial and commercial teams.",
     images: ["/meta-img.jpg"],
     creator: "@quantumautomata",
   },
@@ -59,12 +60,16 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`${schibstedGrotesk.variable} font-sans antialiased bg-background text-foreground`}>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-        <Analytics />
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${schibstedGrotesk.variable} font-sans antialiased`}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <div className="bg-background text-foreground min-h-screen">
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+          </div>
+          <Analytics />
+        </ThemeProvider>
       </body>
     </html>
   )

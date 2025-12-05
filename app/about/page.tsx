@@ -30,6 +30,28 @@ export default function AboutPage() {
         "We maintain the highest standards of regulatory compliance and data security, ensuring our solutions meet international best practices and local requirements.",
     },
   ]
+  const leaders = [
+    {
+      initials: "RO",
+      name: "Richard O.",
+      role: "Marketing Manager / AI & Automation Specialist",
+    },
+    {
+      initials: "FO",
+      name: "Faith O.",
+      role: "Product Manager / Algorithmic Expert / Forex Coach",
+    },
+    {
+      initials: "KO",
+      name: "Kings O.",
+      role: "Sales & Support Manager / Software Developer",
+    },
+    {
+      initials: "MG",
+      name: "Michael G.",
+      role: "Software Engineer / Forex Coach",
+    },
+  ]
 
   return (
     <div className="pt-16">
@@ -84,7 +106,7 @@ export default function AboutPage() {
           >
             <h2 className="text-3xl font-bold text-foreground">Who We Are</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Quantum Automata Limited is a technology and automation solutions company dedicated to developing software
+              Quantum Automatais a technology and automation solutions company dedicated to developing software
               systems designed to enhance operational efficiency, decision-making, and digital capability for
               individuals and businesses within the financial and commercial sectors.
             </p>
@@ -190,33 +212,33 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <h2 className="text-3xl font-bold text-foreground mb-8">Leadership</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-8">Team Members</h2>
 
-            <div className="grid md:grid-cols-1 max-w-md mx-auto gap-6">
-              <motion.div
-                whileHover={{ scale: 1.05, y: -5 }}
-                className="glass p-8 rounded-2xl border border-white/10 hover:border-primary/30 hover:shadow-xl transition-all duration-300"
-              >
+            <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+              {leaders.map((leader, index) => (
                 <motion.div
-                  animate={{
-                    boxShadow: [
-                      "0 0 20px rgba(99, 102, 241, 0.2)",
-                      "0 0 40px rgba(99, 102, 241, 0.4)",
-                      "0 0 20px rgba(99, 102, 241, 0.2)",
-                    ],
-                  }}
-                  transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
-                  className="w-20 h-20 bg-gradient-brand rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold"
+                  key={leader.name}
+                  whileHover={{ scale: 1.05, y: -5 }}
+                  transition={{ delay: index * 0.05 }}
+                  className="glass p-8 rounded-2xl border border-white/10 hover:border-primary/30 hover:shadow-xl transition-all duration-300"
                 >
-                  YR
+                  <motion.div
+                    animate={{
+                      boxShadow: [
+                        "0 0 20px rgba(99, 102, 241, 0.2)",
+                        "0 0 40px rgba(99, 102, 241, 0.4)",
+                        "0 0 20px rgba(99, 102, 241, 0.2)",
+                      ],
+                    }}
+                    transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY, delay: index * 0.2 }}
+                    className="w-20 h-20 bg-gradient-brand rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold"
+                  >
+                    {leader.initials}
+                  </motion.div>
+                  <h3 className="text-xl font-bold text-foreground mb-1">{leader.name}</h3>
+                  <p className="text-primary font-semibold mb-3">{leader.role}</p>
                 </motion.div>
-                <h3 className="text-xl font-bold text-foreground mb-1">Yomi Richard</h3>
-                <p className="text-primary font-semibold mb-3">Chief Executive Officer</p>
-                <p className="text-muted-foreground">
-                  Visionary leader driving Quantum Automata's mission to transform businesses across Africa with
-                  innovative AI and automation solutions.
-                </p>
-              </motion.div>
+              ))}
             </div>
           </motion.div>
         </div>
