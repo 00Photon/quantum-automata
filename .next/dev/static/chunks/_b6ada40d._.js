@@ -499,14 +499,14 @@ function AboutPage() {
                                         transition: {
                                             delay: index * 0.05
                                         },
-                                        className: "glass p-8 rounded-2xl border border-white/10 hover:border-primary/30 hover:shadow-xl transition-all duration-300",
+                                        className: "glass p-8 rounded-2xl border border-border hover:border-primary/40 hover:shadow-xl transition-all duration-300",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                                 animate: {
                                                     boxShadow: [
-                                                        "0 0 20px rgba(99, 102, 241, 0.2)",
-                                                        "0 0 40px rgba(99, 102, 241, 0.4)",
-                                                        "0 0 20px rgba(99, 102, 241, 0.2)"
+                                                        "0 0 20px rgba(99, 102, 241, 0.15)",
+                                                        "0 0 40px rgba(99, 102, 241, 0.3)",
+                                                        "0 0 20px rgba(99, 102, 241, 0.15)"
                                                     ]
                                                 },
                                                 transition: {
@@ -514,7 +514,7 @@ function AboutPage() {
                                                     repeat: Number.POSITIVE_INFINITY,
                                                     delay: index * 0.2
                                                 },
-                                                className: "w-20 h-20 bg-gradient-brand rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold",
+                                                className: "w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center text-foreground text-2xl font-bold bg-gradient-to-br from-secondary/70 via-card to-secondary/40 dark:from-primary/40 dark:via-background",
                                                 children: leader.initials
                                             }, void 0, false, {
                                                 fileName: "[project]/app/about/page.tsx",

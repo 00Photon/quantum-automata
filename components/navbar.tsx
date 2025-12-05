@@ -1,16 +1,23 @@
 "use client"
 
 import Link from "next/link"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Menu, X } from "lucide-react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ContactModal } from "./contact-modal"
 import { ThemeToggle } from "./theme-toggle"
+import { useTheme } from "next-themes"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const { resolvedTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => setMounted(true), [])
+
+  const logoSrc = !mounted ? "/logo-white.png" : resolvedTheme === "dark" ? "/logo-white.png" : "/logo-dark.png"
 
   const navItems = [
     { label: "Home", href: "/" },
@@ -27,14 +34,7 @@ export function Navbar() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2">
-              <Image
-                src="/logo-white.png"
-                alt="Quantum Automata"
-                width={220}
-                height={70}
-                className="h-10 w-auto"
-                priority
-              />
+              <Image src={logoSrc} alt="Quantum Automata" width={220} height={70} className="h-10 w-auto" priority />
             </Link>
 
             {/* Desktop Navigation */}

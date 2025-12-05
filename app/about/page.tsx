@@ -220,18 +220,18 @@ export default function AboutPage() {
                   key={leader.name}
                   whileHover={{ scale: 1.05, y: -5 }}
                   transition={{ delay: index * 0.05 }}
-                  className="glass p-8 rounded-2xl border border-white/10 hover:border-primary/30 hover:shadow-xl transition-all duration-300"
+                  className="glass p-8 rounded-2xl border border-border hover:border-primary/40 hover:shadow-xl transition-all duration-300"
                 >
                   <motion.div
                     animate={{
                       boxShadow: [
-                        "0 0 20px rgba(99, 102, 241, 0.2)",
-                        "0 0 40px rgba(99, 102, 241, 0.4)",
-                        "0 0 20px rgba(99, 102, 241, 0.2)",
+                        "0 0 20px rgba(99, 102, 241, 0.15)",
+                        "0 0 40px rgba(99, 102, 241, 0.3)",
+                        "0 0 20px rgba(99, 102, 241, 0.15)",
                       ],
                     }}
                     transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY, delay: index * 0.2 }}
-                    className="w-20 h-20 bg-gradient-brand rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold"
+                    className="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center text-foreground text-2xl font-bold bg-gradient-to-br from-secondary/70 via-card to-secondary/40 dark:from-primary/40 dark:via-background"
                   >
                     {leader.initials}
                   </motion.div>

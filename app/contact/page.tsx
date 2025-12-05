@@ -175,7 +175,7 @@ export default function ContactPage() {
                   >
                     <MapPin className="w-16 h-16 text-primary mx-auto mb-3 opacity-70" />
                   </motion.div>
-                  <p className="text-muted-foreground font-semibold">No 12, Emmanuel Close, Life Camp, Abuja</p>
+                  <p className="text-muted-foreground font-semibold">Abuja, Nigeria</p>
                 </div>
               </div>
             </motion.div>

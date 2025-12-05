@@ -10,9 +10,34 @@ import { ContactModal } from "@/components/contact-modal"
 export function HeroSection() {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
+  const particles = Array.from({ length: 20 }, (_, index) => ({
+    delay: (index * 0.7) % 5,
+    duration: 12 + (index % 5),
+    left: `${(index * 13) % 100}%`,
+    size: 4 + (index % 4),
+  }))
+
   return (
     <>
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-20 bg-background">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute w-[420px] h-[420px] left-[-5%] top-20 rounded-full blur-[160px] bg-gradient-to-br from-primary/15 via-primary/5 to-transparent dark:from-primary/25 dark:via-primary/10" />
+          <div className="absolute w-[360px] h-[360px] right-[-5%] top-10 rounded-full blur-[140px] bg-gradient-to-tl from-accent/10 via-accent/5 to-transparent dark:from-accent/20 dark:via-accent/10" />
+          {particles.map((particle, index) => (
+            <motion.span
+              key={`particle-${index}`}
+              className="absolute rounded-full bg-primary/50 dark:bg-white/25 shadow-[0_0_10px_rgba(98,69,255,0.3)]"
+              style={{
+                width: particle.size,
+                height: particle.size,
+                left: particle.left,
+                bottom: -20,
+              }}
+              animate={{ y: ["0%", "-120vh"], opacity: [0, 1, 0] }}
+              transition={{ duration: particle.duration, delay: particle.delay, repeat: Infinity, ease: "easeInOut" }}
+            />
+          ))}
+        </div>
         <div className="relative z-10 max-w-5xl mx-auto px-4 text-center space-y-8">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
