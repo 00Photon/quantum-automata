@@ -20,17 +20,17 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
     {
       icon: <Mail className="w-6 h-6" />,
       label: "Send us a mail",
-      description: "yomirichard@gmail.com",
-      href: "mailto:yomirichard@gmail.com",
+      description: "support@quantumautomata.ng",
+      href: "mailto:support@quantumautomata.ng",
       color: "from-[#4c3edb] to-[#a24bff]",
     },
-    {
-      icon: <Phone className="w-6 h-6" />,
-      label: "WhatsApp",
-      description: "+234 705 539 4888",
-      href: "https://wa.me/2347055394888",
-      color: "from-[#1f2c5a] to-[#a24bff]",
-    },
+    // {
+    //   icon: <Phone className="w-6 h-6" />,
+    //   label: "WhatsApp",
+    //   description: "+234 705 539 4888",
+    //   href: "https://wa.me/2347055394888",
+    //   color: "from-[#1f2c5a] to-[#a24bff]",
+    // },
   ]
 
   return (
