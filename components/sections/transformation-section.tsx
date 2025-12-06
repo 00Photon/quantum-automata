@@ -26,7 +26,7 @@ export function TransformationSection() {
           >
             <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-secondary/20 to-background/10 rounded-2xl" />
             <Image
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=400&fit=crop"
+              src="/ima-2.jpg"
               alt="Transforming Visions into Reality"
               fill
               className="object-cover"

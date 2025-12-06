@@ -17,7 +17,7 @@ export function Footer() {
               <span className="font-bold text-lg font-heading">Quantum Automata</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Ethical AI and automation solutions for Africa's digital future.
+              Ethical AI and automation solutions for Global's digital future.
             </p>
           </div>
 

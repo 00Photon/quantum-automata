@@ -46,12 +46,12 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/logo-white.png", type: "image/png" },
-      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/logo-gradient.png", type: "image/png" },
     ],
     shortcut: ["/logo-white.png"],
     apple: ["/apple-icon.png"],
   },
-  generator: "v0.app",
+  generator: "Quantum",
 }
 
 export default function RootLayout({

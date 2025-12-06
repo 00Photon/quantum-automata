@@ -6,10 +6,23 @@ import { products } from "@/lib/products"
 import { Button } from "@/components/ui/button"
 import * as Icons from "lucide-react"
 import { ArrowRight } from "lucide-react"
+import { ContactModal } from "@/components/contact-modal"
+import { useState } from "react"
+
+const externalLinks: Record<string, string> = {
+  botsbyqa: "https://qasoftwares.online/quantum",
+  forexed: "https://forexedbyqa.online/forexed",
+  "arbitrage-monkey": "https://qasoftwares.online/arbitrage-monkey-page",
+}
+
+const contactSlugs = new Set(["interl", "precision-automation"])
 
 export function ProductsOverviewSection() {
+  const [isContactOpen, setIsContactOpen] = useState(false)
+
   return (
-    <section className="py-20 md:py-28 relative overflow-hidden bg-background">
+    <>
+      <section className="py-20 md:py-28 relative overflow-hidden bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -45,15 +58,32 @@ export function ProductsOverviewSection() {
                 </motion.div>
                 <h3 className="text-xl font-bold text-foreground mb-3 font-heading">{product.name}</h3>
                 <p className="text-sm text-muted-foreground mb-6 leading-relaxed">{product.shortDescription}</p>
-                <Button
-                  asChild
-                  variant="ghost"
-                  className="text-secondary hover:bg-white/10 p-0 group-hover:translate-x-2 transition-transform"
-                >
-                  <Link href={`/products/${product.slug}`} className="flex items-center gap-2">
-                    Learn More <ArrowRight size={16} />
-                  </Link>
-                </Button>
+                {contactSlugs.has(product.slug) ? (
+                  <Button
+                    variant="ghost"
+                    className="text-secondary hover:bg-white/10 p-0 group-hover:translate-x-2 transition-transform"
+                    onClick={() => setIsContactOpen(true)}
+                  >
+                    <span className="flex items-center gap-2">
+                      Contact Us <ArrowRight size={16} />
+                    </span>
+                  </Button>
+                ) : (
+                  <Button
+                    asChild
+                    variant="ghost"
+                    className="text-secondary hover:bg-white/10 p-0 group-hover:translate-x-2 transition-transform"
+                  >
+                    <Link
+                      href={externalLinks[product.slug] ?? `/products/${product.slug}`}
+                      className="flex items-center gap-2"
+                      target={externalLinks[product.slug] ? "_blank" : undefined}
+                      rel={externalLinks[product.slug] ? "noopener noreferrer" : undefined}
+                    >
+                      Learn More <ArrowRight size={16} />
+                    </Link>
+                  </Button>
+                )}
               </motion.div>
             )
           })}
@@ -67,6 +97,8 @@ export function ProductsOverviewSection() {
           </Button>
         </div>
       </div>
-    </section>
+      </section>
+      <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
+    </>
   )
 }

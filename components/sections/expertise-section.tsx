@@ -18,19 +18,19 @@ const expertise: ExpertiseItem[] = [
     title: "AI-Powered Tools",
     description:
       "Advanced artificial intelligence systems that enhance decision-making and automate complex workflows.",
-    imageUrl: "https://images.unsplash.com/photo-1677442d019a0d92b90d5cc42e7f1f1a5d5e5f5d?w=400&h=192&fit=crop",
+    imageUrl: "/ai.jpg",
   },
   {
     icon: <Workflow className="w-8 h-8" />,
     title: "Automation Engineering",
     description: "Combining AI with intelligent workflows to streamline operations and reduce manual intervention.",
-    imageUrl: "https://images.unsplash.com/photo-1518666528743-4d5800e33864?w=400&h=192&fit=crop",
+    imageUrl: "/ima-1.jpg",
   },
   {
     icon: <BookOpen className="w-8 h-8" />,
     title: "Digital Education",
     description: "Comprehensive training and resources to help businesses leverage our automation solutions.",
-    imageUrl: "https://images.unsplash.com/photo-1516534775068-bb57c9c00bb5?w=400&h=192&fit=crop",
+    imageUrl: "/education.jpg",
   },
 ]
 
